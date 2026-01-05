@@ -28,7 +28,7 @@ public class Main {
         Car winner = Race.winner(cars);
 
         if (winner == null) {
-            System.out.println("Нет машин с допустимой скоростью (0..250).");
+            System.out.println("Нет машин с допустимой скоростью.");
         } else {
             System.out.println("Самый быстрый автомобиль: " + winner.name);
 
@@ -59,6 +59,6 @@ class Race {
                 }
             }
         }
-        return winner;
+        return winner; 
     }
 }
